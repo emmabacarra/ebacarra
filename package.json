@@ -1,0 +1,15 @@
+{
+  "name": "emmabacarra.github.io",
+  "version": "1.0.0",
+  "description": "Emma's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/stylesheets/input.css -o ./src/stylesheets/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
