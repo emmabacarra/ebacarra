@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma's Website</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5727d82724.js" crossorigin="anonymous"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-violet">
+    <header class="sticky top-0 z-50 mx-7 bg-violet border border-b-[#d9d3d0] border-x-0">
+        <div class="mb-7 bg-violet"></div>
+        <nav class="navbar flex justify-between items-center bg-skin">
+            <div class="logo flex items-center mx-5">
+                <a href="./index.html">
+                    <img src="../public/imgs/bordered logo.svg" alt="Emma logo">
+                </a>
+            </div>
+            <ul class="flex mr-5">
+                <li><a class="p-3 m-3 hover:text-orange active:text-orange" href="./about.html">About Me</a></li>
+                <li><a class="p-3 m-3 hover:text-orange active:text-orange" href="#">Projects</a></li>
+                <li><a class="p-3 m-3 hover:text-orange active:text-orange" href="#" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex flex-col mx-7 mb-7 bg-skin">
+        <div class="hero relative flex items-center justify-center bg-skin p-10">
+            <div class="relative m-5">
+                <h1 class="name m-2 text-orange">About Me</h1>
+                <img class="triple-heart absolute" src="../public/imgs/triple heart doodle.svg" alt="">
+                <p class="about p11 mt-5">
+                    My name is Emma, and I&apos;m a third year student at the University of Washington 
+                    studying Physics and Astronomy and minor in Data Science. I love to learn about machine 
+                    learning, cosmology, and high energy physics.
+                    <br>
+                    <br>
+                    I enjoy working as the outreach coordinator with the academic advisors in support of
+                    the students and faculty! It involves helping to organize astronomy department events
+                    and provide resources for student engagement.
+                    <br>
+                    <br>
+                    Right now, I&apos;m focused on strengthening my data science skills to apply to research
+                    topics in physics and astronomy. Following my genuine interest for coding, I push myself
+                    to expand my programming skills and optimize my work.
+                    <br>
+                    <br>
+                    When I&apos;m not wearing my student hat, I find joy in the form of dance and art - 
+                    I&apos;ve had these hobbies throughout my whole life!
+                </p>
+            </div>
+            <img class="about-img" src="../public/imgs/lavender field with border.png" alt="Emma Bacarra Image">
+        </div>
+    </main>
+    <footer class="mt-auto min-w-full">
+        <div class="flex justify-between items-start mt-2 p-10 bg-brown">
+            <div class="ml-5">
+                <img class="full-logo" src="../public/imgs/full logo.svg" alt="emma full logo" />
+                <div class="contacts flex">
+                    <div class="mt-5 mx-3">
+                        <p class="text-grey"><a href="mailto:ebacarra@uw.edu">ebacarra@uw.edu</a></p>
+                        <p class="text-grey">&#40;703&#41; 819.3519</p>
+                    </div>
+                    <div class="social-links flex gap-8 mt-5 mx-3">
+                        <a href=""><i class="fa-brands fa-linkedin-in text-skin text-4xl"></i></a>
+                        <a href=""><i class="fa-brands fa-github text-skin text-4xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right mr-5">
+                <p class="text-grey leading-none">Designed by <span class="text-orange">Emma Bacarra</span></p>
+                <p class="text-grey leading-none">Developed by <span class="text-orange">Leo Li</span></p>
+                <p class="text-grey mt-2">Copyright &copy; Emma Bacarra 2024</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
