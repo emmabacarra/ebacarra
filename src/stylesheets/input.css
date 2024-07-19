@@ -17,7 +17,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 
@@ -108,6 +108,41 @@ button:hover {
   top: 30px;
   left: 250px;
   width: 80px;
+}
+
+/* Project Page */
+.grid {
+  grid-template-columns: repeat(auto-fit, 390px);
+}
+
+.card-item {
+  perspective: 400px;
+}
+
+.card {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card-item:hover .card {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card img,
+.description {
+  width: 390px;
+  height: 390px;
+  backface-visibility: hidden;
+}
+
+.description {
+  transform: rotateY(180deg);
+}
+
+.card-item span img.right-arrow  {
+  width: 30px;
+  height: 15px;
 }
 
 

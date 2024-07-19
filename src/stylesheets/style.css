@@ -586,6 +586,19 @@ video {
   margin: 1.25rem;
 }
 
+.m-20 {
+  margin: 5rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -601,12 +614,25 @@ video {
   margin-right: 1.75rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
 
 .mb-7 {
   margin-bottom: 1.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .ml-5 {
@@ -619,6 +645,10 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-2 {
@@ -641,6 +671,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -651,6 +685,14 @@ video {
 
 .min-w-full {
   min-width: 100%;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -685,6 +727,10 @@ video {
   gap: 2rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -692,6 +738,10 @@ video {
 .border-x-0 {
   border-left-width: 0px;
   border-right-width: 0px;
+}
+
+.border-transparent {
+  border-color: transparent;
 }
 
 .border-b-\[\#d9d3d0\] {
@@ -702,6 +752,11 @@ video {
 .bg-brown {
   --tw-bg-opacity: 1;
   background-color: rgb(73 57 49 / var(--tw-bg-opacity));
+}
+
+.bg-grey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 242 242 / var(--tw-bg-opacity));
 }
 
 .bg-orange {
@@ -717,6 +772,11 @@ video {
 .bg-violet {
   --tw-bg-opacity: 1;
   background-color: rgb(223 175 219 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-10 {
@@ -773,9 +833,26 @@ video {
   color: rgb(250 232 224 / var(--tw-text-opacity));
 }
 
+.text-violet {
+  --tw-text-opacity: 1;
+  color: rgb(223 175 219 / var(--tw-text-opacity));
+}
+
 .text-yellow {
   --tw-text-opacity: 1;
   color: rgb(255 209 140 / var(--tw-text-opacity));
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-30 {
+  opacity: 0.3;
 }
 
 body {
@@ -793,7 +870,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 /* Index page */
@@ -886,6 +963,42 @@ button:hover {
   width: 80px;
 }
 
+/* Project Page */
+
+.grid {
+  grid-template-columns: repeat(auto-fit, 390px);
+}
+
+.card-item {
+  perspective: 400px;
+}
+
+.card {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card-item:hover .card {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card img,
+.description {
+  width: 390px;
+  height: 390px;
+  backface-visibility: hidden;
+}
+
+.description {
+  transform: rotateY(180deg);
+}
+
+.card-item span img.right-arrow  {
+  width: 30px;
+  height: 15px;
+}
+
 /* Error page */
 
 .err-msg-title,
@@ -901,10 +1014,6 @@ button:hover {
   bottom: 0;
   right: -50px;
   width: 600px;
-}
-
-.visited\:text-orange:visited {
-  color: rgb(253 109 47 );
 }
 
 .hover\:text-orange:hover {
