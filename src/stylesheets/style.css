@@ -446,6 +446,81 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: 'bogart';
+
+  src: url(../../public/fonts/bogart/Bogart-Regular-trial.ttf) format('truetype');
+
+  font-weight: 500;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bogart-bold';
+
+  src: url(../../public/fonts/bogart/Bogart-Semibold-trial.ttf) format('truetype');
+
+  font-weight: 600;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bogart-italic';
+
+  src: url(../../public/fonts/bogart/Bogart-Semibold-Italic-trial.ttf) format('truetype');
+
+  font-weight: 600;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'bogart-thin';
+
+  src: url(../../public/fonts/bogart/Bogart-Thin-trial.ttf) format('truetype'),
+         url(../../public/fonts/bogart/Bogart-Thin-Italic-trial.ttf) format('truetype');
+
+  font-weight: 100;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'genty';
+
+  src: url(../../public/fonts/genty/GentyDemo-Regular.ttf) format('truetype'),
+         url(../../public/fonts/genty/GentyDemo-Regular.otf) format('opentype');
+
+  font-weight: 400;
+
+  font-size: larger;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tt_firs_neue';
+
+  src: url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Regular.ttf) format('truetype');
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tt_firs_neue-thin';
+
+  src: url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Thin.ttf) format('truetype'),
+         url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Thin\ Italic.ttf) format('truetype');
+
+  font-weight: 100;
+
+  font-style: normal;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -574,6 +649,10 @@ video {
   z-index: 50;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -586,14 +665,6 @@ video {
   margin: 1.25rem;
 }
 
-.m-20 {
-  margin: 5rem;
-}
-
-.m-10 {
-  margin: 2.5rem;
-}
-
 .mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -602,6 +673,11 @@ video {
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
+}
+
+.mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .mx-5 {
@@ -614,19 +690,14 @@ video {
   margin-right: 1.75rem;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .my-14 {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
 }
 
-.mx-40 {
-  margin-left: 10rem;
-  margin-right: 10rem;
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .mb-10 {
@@ -637,8 +708,16 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-7 {
   margin-bottom: 1.75rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
 }
 
 .ml-2 {
@@ -677,36 +756,12 @@ video {
   margin-top: auto;
 }
 
-.mb-14 {
-  margin-bottom: 3.5rem;
-}
-
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
-}
-
-.list-item {
-  display: list-item;
 }
 
 .min-h-screen {
@@ -719,10 +774,6 @@ video {
 
 .min-w-full {
   min-width: 100%;
-}
-
-.list-none {
-  list-style-type: none;
 }
 
 .list-disc {
@@ -741,10 +792,6 @@ video {
   flex-direction: column;
 }
 
-.content-end {
-  align-content: flex-end;
-}
-
 .items-start {
   align-items: flex-start;
 }
@@ -755,10 +802,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -855,17 +898,39 @@ video {
   text-align: right;
 }
 
-.text-end {
-  text-align: end;
+.font-bogart-bold {
+  font-family: bogart-bold, sans-serif;
 }
 
-.align-top {
-  vertical-align: top;
+.font-bogart-italic {
+  font-family: bogart-italic, sans-serif;
+}
+
+.font-genty {
+  font-family: genty, serif;
+}
+
+.font-tt_firs_neue {
+  font-family: tt_firs_neue, san-serif;
+}
+
+.font-tt_firs_neue-thin {
+  font-family: tt_firs_neue-thin, san-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .leading-none {
@@ -905,16 +970,44 @@ video {
   opacity: 0.2;
 }
 
-.opacity-40 {
-  opacity: 0.4;
-}
+/* url(../../public/fonts/bogart/Bogart-Black-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Black-trial.ttf) format('truetype'), 
+  url(../../public/fonts/bogart/Bogart-Bold-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Bold-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Extrabold-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Extralight-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Extralight-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Light-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Light-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Medium-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Medium-trial.ttf) format('truetype'),
 
-.opacity-30 {
-  opacity: 0.3;
-}
+
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Bold\ Outline\ Trial.otf) format('opentype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Bold\ Outline\ Trial\ Italic.otf) format('opentype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Black.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Black\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Bold.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Bold\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ DemiBold.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ DemiBold\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraBold.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraBold\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraLight.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraLight\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Var\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Var\ Roman.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Light.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Light\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Medium.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Medium\ Italic.ttf) format('truetype'),
+
+   */
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Bogart', Helvetica, sans-serif;
   font-size: 16px;
   overflow-x: hidden;
 }
@@ -961,7 +1054,9 @@ button:hover {
   box-shadow: -2px 4px #DFAFDB;
 }
 
-.name {
+.name, 
+.project-header,
+.resume {
   text-shadow:
       -2px -2px 0 #FFD18C,
       2px -2px 0 #FFD18C,
@@ -1016,8 +1111,8 @@ button:hover {
 }
 
 .triple-heart {
-  top: 30px;
-  left: 250px;
+  top: 20px;
+  left: 320px;
   width: 80px;
 }
 

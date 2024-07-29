@@ -2,8 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
+/* url(../../public/fonts/bogart/Bogart-Black-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Black-trial.ttf) format('truetype'), 
+  url(../../public/fonts/bogart/Bogart-Bold-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Bold-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Extrabold-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Extralight-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Extralight-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Light-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Light-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Medium-Italic-trial.ttf) format('truetype'),
+  url(../../public/fonts/bogart/Bogart-Medium-trial.ttf) format('truetype'),
+
+
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Bold\ Outline\ Trial.otf) format('opentype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Bold\ Outline\ Trial\ Italic.otf) format('opentype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Black.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Black\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Bold.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Bold\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ DemiBold.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ DemiBold\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraBold.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraBold\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraLight.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraLight\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Var\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Var\ Roman.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Light.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Light\ Italic.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Medium.ttf) format('truetype'),
+  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Medium\ Italic.ttf) format('truetype'),
+
+   */
+
+@layer base {
+  @font-face {
+    font-family: 'bogart';
+    src: url(../../public/fonts/bogart/Bogart-Regular-trial.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'bogart-bold';
+    src: url(../../public/fonts/bogart/Bogart-Semibold-trial.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'bogart-italic';
+    src: url(../../public/fonts/bogart/Bogart-Semibold-Italic-trial.ttf) format('truetype');    
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'bogart-thin';
+    src: url(../../public/fonts/bogart/Bogart-Thin-trial.ttf) format('truetype'),
+         url(../../public/fonts/bogart/Bogart-Thin-Italic-trial.ttf) format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+
+  @font-face {
+    font-family: 'genty';
+    src: url(../../public/fonts/genty/GentyDemo-Regular.ttf) format('truetype'),
+         url(../../public/fonts/genty/GentyDemo-Regular.otf) format('opentype');
+    font-weight: 400;
+    font-size: larger;
+    font-style: normal;      
+  }
+
+  @font-face {
+    font-family: 'tt_firs_neue';
+    src: url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'tt_firs_neue-thin';
+    src: url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Thin.ttf) format('truetype'),
+         url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Thin\ Italic.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+}
+
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Bogart', Helvetica, sans-serif;
   font-size: 16px;
   overflow-x: hidden;
 }
@@ -50,7 +142,9 @@ button:hover {
   box-shadow: -2px 4px #DFAFDB;
 }
 
-.name {
+.name, 
+.project-header,
+.resume {
   text-shadow:
       -2px -2px 0 #FFD18C,
       2px -2px 0 #FFD18C,
@@ -105,8 +199,8 @@ button:hover {
 }
 
 .triple-heart {
-  top: 30px;
-  left: 250px;
+  top: 20px;
+  left: 320px;
   width: 80px;
 }
 
