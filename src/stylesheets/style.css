@@ -1051,7 +1051,8 @@ button {
 }
 
 button:hover {
-  box-shadow: -2px 4px #DFAFDB;
+  box-shadow: -2px 4px black;
+  background-color: #FFB74A;
 }
 
 .name, 
@@ -1123,7 +1124,7 @@ button:hover {
 }
 
 .card-item {
-  perspective: 400px;
+  perspective: 2000px;
 }
 
 .card {
