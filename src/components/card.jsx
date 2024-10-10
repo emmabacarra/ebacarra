@@ -20,7 +20,7 @@ export default function Card(props) {
             <div className="card-title">
                 <h3 className="font-bogart-bold mt-4">{props.title}</h3>
                 <a href="">
-                    <p className="flex items-center">Read More <span><img className="right-arrow ml-2" src="../public/imgs/right arrow.svg" alt="right arrow" /></span></p>
+                    <p className="flex items-center">Read More <span><img className="right-arrow ml-2" src="/imgs/right arrow.svg" alt="right arrow" /></span></p>
                 </a>
             </div>
         </div>

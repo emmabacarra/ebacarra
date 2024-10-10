@@ -17,10 +17,10 @@ export default function Home() {
                             As a space enthusiast, I study Physics and Astronomy and minor in Data Science. My passions
                             broadly lie in <span className="text-orange">machine learning</span>, <span className="text-orange">cosmology</span>, and <span className="text-orange">high energy physics</span>!
                         </p>
-                        <img className="retro-textbox absolute w-full" src="../public/imgs/decorated retro text box.svg" alt="retro themed card with planet at bottom left and some stars at top right" />
+                        <img className="retro-textbox absolute w-full" src="/imgs/decorated retro text box.svg" alt="retro themed card with planet at bottom left and some stars at top right" />
                     </div>
-                    <img className="disco absolute" src="../public/imgs/disco ball 1.svg" alt="disco ball svg" />
-                    <img className="hero-img" src="../public/imgs/me in paris.png" alt="Emma Bacarra Image" />
+                    <img className="disco absolute" src="/imgs/disco ball 1.svg" alt="disco ball svg" />
+                    <img className="hero-img" src="/imgs/me in paris.png" alt="Emma Bacarra Image" />
                 </div>
                 <div className="nav-section flex justify-evenly mt-10 mb-20">
                     <Button link={"/About"} text="About Me" />

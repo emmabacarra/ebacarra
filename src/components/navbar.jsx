@@ -7,7 +7,7 @@ export default function Navbar() {
             <nav className="navbar flex justify-between items-center bg-skin">
                 <div className="logo flex items-center mx-5">
                     <Link to="/">
-                        <img src="../public/imgs/bordered logo.svg" alt="Emma logo" />
+                        <img src="/imgs/bordered logo.svg" alt="Emma logo" />
                     </Link>
                 </div>
                 <ul className="flex mr-5">

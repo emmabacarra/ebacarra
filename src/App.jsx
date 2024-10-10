@@ -7,8 +7,6 @@ import Resume from './pages/resume';
 import Error from './pages/error';
 import '../stylesheets/input.css';
 
-// import './App.css'
-
 export default function App() {
     return (
         <BrowserRouter>

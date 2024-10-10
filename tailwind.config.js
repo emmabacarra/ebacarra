@@ -18,8 +18,8 @@ export default {
       'bogart-italic': ['bogart-italic', 'sans-serif'],
       'bogart-thin': ['bogart-thin', 'sans-serif'],
       'genty': ['genty', 'serif'],
-      'tt_firs_neue': ['tt_firs_neue', 'san-serif'],
-      'tt_firs_neue-thin': ['tt_firs_neue-thin', 'san-serif'],
+      'tt_firs_neue': ['tt_firs_neue', 'sans-serif'],
+      'tt_firs_neue-thin': ['tt_firs_neue-thin', 'sans-serif'],
     }
   },
   plugins: [],

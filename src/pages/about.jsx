@@ -9,7 +9,7 @@ export default function About() {
                 <div className="hero relative flex items-center justify-center bg-skin p-10">
                     <div className="relative m-5">
                         <h1 className="name m-2 text-orange font-genty text-7xl">About Me</h1>
-                        <img className="triple-heart absolute" src="../public/imgs/triple heart doodle.svg" alt="" />
+                        <img className="triple-heart absolute" src="/imgs/triple heart doodle.svg" alt="" />
                         <p className="about p11 mt-5 font-tt_firs_neue">
                             My name is Emma, and I&apos;m a third year student at the University of Washington 
                             studying Physics and Astronomy and minor in Data Science. I love to learn about machine 
@@ -30,7 +30,7 @@ export default function About() {
                             I&apos;ve had these hobbies throughout my whole life!
                         </p>
                     </div>
-                    <img className="about-img" src="../public/imgs/lavender field with border.png" alt="Emma Bacarra Image" />
+                    <img className="about-img" src="/imgs/lavender field with border.png" alt="Emma Bacarra Image" />
                 </div>
             </main>
             <Footer />
