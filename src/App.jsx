@@ -5,7 +5,7 @@ import About from './pages/about';
 import Projects from './pages/projects';
 import Resume from './pages/resume';
 import Error from './pages/error';
-import '../stylesheets/input.css';
+import './app.css';
 
 export default function App() {
     return (
