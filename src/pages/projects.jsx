@@ -20,7 +20,7 @@ export default function Projects() {
                 <section className="works mx-20 mb-10">
                     <h3 className="text-violet font-bogart-bold">Select Works</h3>
                     <div className="projects grid grid-cols-3 grid-flow-row gap-8 my-5">
-                        <Card background={"Explore the capabilities of many-to-one transformer architectures to identify post-collision decayed particles. With data from the CERN laboratory, this can reveal new secrets in particle physics."} img={"/imgs/tag, you_re it!.jpg"} alt={""} title={"Tag, You&apos;re It!"} />
+                        <Card background={"Explore the capabilities of many-to-one transformer architectures to identify post-collision decayed particles. With data from the CERN laboratory, this can reveal new secrets in particle physics."} img={"/imgs/tag, you_re it!.jpg"} alt={""} title={"Tag, You're It!"} />
 
                         <Card background={"`As a potential influence on stellar formation, compare the relationship between two-bodied systems and a single galaxy. An interacting pair can be the spark that ignites stellar formation, an important quality for the stellar nurseries of the Universe. <br/> <br/> These events are an important tool for characterizing the dynamic histories and evolution of galaxies in our Universe.`"} img={"/imgs/galactic singles and pairs.jpg"} alt={""} title={"Galactic Singles and Pairs"} />
 
@@ -28,7 +28,7 @@ export default function Projects() {
 
                         <Card background={"lkahglkeagelng"} img={"/imgs/cmb unsupervised.jpg"} alt={""} title={"CMB Unsupervised"} />
 
-                        <Card background={"lkahglkeagelng"} img={"/imgs/hubble_s mystery.png"} alt={""} title={"Who&apos;s Waving?"} />
+                        <Card background={"lkahglkeagelng"} img={"/imgs/hubble_s mystery.png"} alt={""} title={"Who's Waving?"} />
                         <Card background={"lkahglkeagelng"} img={"/imgs/project vax.jpg"} alt={""} title={"Project Vax"} />
                     </div>
                 </section>

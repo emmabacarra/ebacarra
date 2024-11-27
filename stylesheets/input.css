@@ -2,42 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* url(../../public/fonts/bogart/Bogart-Black-Italic-trial.ttf) format('truetype'),
-  url(../../public/fonts/bogart/Bogart-Black-trial.ttf) format('truetype'), 
-  url(../../public/fonts/bogart/Bogart-Bold-Italic-trial.ttf) format('truetype'),
-  url(../../public/fonts/bogart/Bogart-Bold-trial.ttf) format('truetype'),
-  url(../../public/fonts/bogart/Bogart-Extrabold-Italic-trial.ttf) format('truetype'),
-  url(../../public/fonts/bogart/Bogart-Extralight-Italic-trial.ttf) format('truetype'),
-  url(../../public/fonts/bogart/Bogart-Extralight-trial.ttf) format('truetype'),
-  url(../../public/fonts/bogart/Bogart-Italic-trial.ttf) format('truetype'),
-  url(../../public/fonts/bogart/Bogart-Light-Italic-trial.ttf) format('truetype'),
-  url(../../public/fonts/bogart/Bogart-Light-trial.ttf) format('truetype'),
-  url(../../public/fonts/bogart/Bogart-Medium-Italic-trial.ttf) format('truetype'),
-  url(../../public/fonts/bogart/Bogart-Medium-trial.ttf) format('truetype'),
-
-
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Bold\ Outline\ Trial.otf) format('opentype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Bold\ Outline\ Trial\ Italic.otf) format('opentype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Black.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Black\ Italic.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Bold.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Bold\ Italic.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ DemiBold.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ DemiBold\ Italic.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraBold.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraBold\ Italic.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraLight.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ ExtraLight\ Italic.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Italic.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Var\ Italic.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Var\ Roman.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Light.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Light\ Italic.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Medium.ttf) format('truetype'),
-  url(../../public/fonts/tt_firs_neue/TT\ Firs\ Neue\ Trial\ Medium\ Italic.ttf) format('truetype'),
-
-   */
-
 @layer base {
   @font-face {
     font-family: 'bogart';

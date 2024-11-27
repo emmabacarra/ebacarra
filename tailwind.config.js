@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/*.{html, js}"],
+  content: [
+    "./src/**/*.{html,js,jsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -13,13 +15,14 @@ export default {
       }
     },
     fontFamily: {
-      'bogart': ['bogart', 'sans-serif'],
-      'bogart-bold': ['bogart-bold', 'sans-serif'],
-      'bogart-italic': ['bogart-italic', 'sans-serif'],
-      'bogart-thin': ['bogart-thin', 'sans-serif'],
+      sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+      'bogart': ['bogart', 'Inter', 'sans-serif'],
+      'bogart-bold': ['bogart-bold', 'Inter', 'sans-serif'],
+      'bogart-italic': ['bogart-italic', 'Inter', 'sans-serif'],
+      'bogart-thin': ['bogart-thin', 'Inter', 'sans-serif'],
       'genty': ['genty', 'serif'],
-      'tt_firs_neue': ['tt_firs_neue', 'sans-serif'],
-      'tt_firs_neue-thin': ['tt_firs_neue-thin', 'sans-serif'],
+      'tt_firs_neue': ['tt_firs_neue', 'Inter', 'sans-serif'],
+      'tt_firs_neue-thin': ['tt_firs_neue-thin', 'Inter', 'sans-serif'],
     }
   },
   plugins: [],
